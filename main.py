@@ -1,6 +1,6 @@
 from flask import redirect, url_for, request
 from flask import Flask, render_template
-
+from flask import jsonify
 app = Flask(__name__)
 
 
@@ -17,8 +17,7 @@ def returnIndex():
 @app.route("/daldongane", methods=['GET', 'POST'])
 def daldongane():
     if request.method == 'POST':
-        print(request.form.get('seat'))
-        return 'Reservation made Sucessfully :)'
+        return jsonify({request.form.get('seat'): True})
     return render_template('daldongane.html')
 
 
