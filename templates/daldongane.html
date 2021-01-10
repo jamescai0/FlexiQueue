@@ -31,7 +31,7 @@
     <div id="main">
         <section id="variables">
 
-            <div>
+            <div class="flex-elem">
                 <p>Number of people</p><select id="pax" name="pax">
                     <option value="">2</option>
                     <option value="">4</option>
@@ -39,7 +39,7 @@
                 </select>
 
             </div>
-            <div>
+            <div class="flex-elem">
                 <p>Time</p><select id="time" name="time">
                     <option value="">2</option>
                     <option value="">4</option>
@@ -47,7 +47,7 @@
                 </select>
 
             </div>
-            <div>
+            <div class="flex-elem">
                 <p>Date</p><select id="date" name="date">
                     <option value=""></option>
                 </select>
@@ -59,20 +59,52 @@
 
         <section id="content">
             <div id="seating-container">
-                <div class="small" id="small-1"></div>
-                <div class="small" id="small-2"></div>
-                <div class="small" id="small-3"></div>
-                <div class="small" id="small-4"></div>
+                <div class="small" id="small-1">1</div>
+                <div class="small" id="small-2">2</div>
+                <div class="small" id="small-3">3</div>
+                <div class="small" id="small-4">4</div>
 
-                <div class="med med-col1" id="med-1"></div>
-                <div class="med med-col1" id="med-2"></div>
-                <div class="med med-col2" id="med-3"></div>
-                <div class="med med-col2" id="med-4"></div>
+                <div class="med med-col1" id="med-1">5</div>
+                <div class="med med-col1" id="med-2">6</div>
+                <div class="med med-col2" id="med-3">7</div>
+                <div class="med med-col2" id="med-4">8</div>
 
-                <div class="large" id="large-1"></div>
-                <div class="large" id="large-2"></div>
+                <div class="large" id="large-1">9</div>
+                <div class="large" id="large-2">10</div>
 
             </div>
+
+            <table id="table-container">
+                <tr>
+                    <th>Seat Number</th>
+                    <th>Taken by</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>null</td>
+                    <td><a href="">Book</a></td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>null</td>
+                    <td><a href="">Book</a></td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>null</td>
+                    <td><a href="">Book</a></td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>null</td>
+                    <td><a href="">Book</a></td>
+                    </td>
+                </tr>
+            </table>
 
             <div>
                 <p id="instructions">* Click on table to select</p>
