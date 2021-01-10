@@ -1,0 +1,134 @@
+* {
+	font-family: 'Montserrat', sans-serif;
+	box-sizing: border-box;
+	overflow-x: hidden;
+	outline: none;
+	padding: 0;
+	margin: 0;
+  }
+  
+  #navbar{
+	background-color:black;
+	height: 15vh;
+	width: 100%;
+	position: fixed; /* Set the navbar to fixed position */
+	top: 0; /* Position the navbar at the top of the page */
+	z-index:999;
+  }
+
+
+ul{
+	display:grid;
+	grid-template-columns: 1fr 3fr 0.5fr 0.5fr;
+	grid-column-gap: 10px;
+	width: 100%;
+	list-style: none;
+	align-items:center;
+	text-align: center;
+	transform: translateY(50%);
+}
+
+#home{
+	grid-column: 1/2;
+	font-size: 36;
+	font-style: italic;
+	font-weight: 900;
+}
+
+
+#search{
+	grid-column: 2/3;
+	height: 100%;
+}
+input{
+    padding-left: 30px;
+    height: 30px;
+
+}
+#search > input{
+	background-color:#F6F6F6;
+	width: 100%;
+	height:100%;
+	border: none;
+	box-shadow: inset 0px -1px 0px #E2E2E2;
+}
+
+#login{
+	grid-column: 3/4;
+}
+#signup{
+	grid-column: 4/5;
+}
+
+#navbar a{
+    text-decoration: none;
+    color:  rgb(85, 173, 207);
+}
+
+#navbar a{
+    text-decoration: none;
+    color:  rgb(85, 173, 207);
+}
+
+.master{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color:  rgb(85, 173, 207);
+}
+
+.container{
+    background-color: #bdbdbd;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    height: 50vh;
+    width: 30vw;
+    border-radius: 50px;
+    padding: 10px;
+    text-align: center;
+    display:grid;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
+    justify-content: center;
+}
+
+
+
+.container > h1{
+    grid-row:1/2;
+    margin: 10px 0;
+}
+
+form{
+    grid-row:2/3;
+    display:grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 10px;
+    justify-content: center;
+    align-self: center;
+}
+
+#error{
+    grid-row: 3/4;
+    color:rgb(228, 74, 74);
+}
+
+#username{
+    grid-row: 1/2;
+}
+
+#password{
+    grid-row:2/3;
+}
+
+#login-btn{
+    grid-row: 3/4;
+    text-align: center;
+    justify-self: center;
+    padding: 0;
+    width: 100px;
+    border:none;
+    cursor: pointer;
+}
+

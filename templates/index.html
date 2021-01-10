@@ -5,50 +5,88 @@
 
   <title>FlexiQueue</title>
 
-  <script src="NWHacks-2021/index.js"></script>
+  <script src="{{url_for('static', filename='index.js')}}"></script>
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 </head>
 
 <body>
-  <header id="navbar" class="content">
+  <header id="navbar">
     <ul>
-      <li id="home">FlexiQueue</li>
+      <li id="home"><a href="index">FlexiQueue</a></li>
       <li id="search">
         <input type="text" placeholder="Enter a restaurant"></input>
       </li>
-      <li id="login">Login</li>
-      <li id="signup">Sign Up</li>
+      <li id="login"><a href="login">Login</a></li>
+      <li id="signup"><a href="signup">Sign Up</a></li>
     </ul>
   </header>
 
   <section id="landing">
     <div>
       <h1>Need a seat? We got you</h1>
-      <input type="text" placeholder="Enter a restaurant"></input>
-      <select id="time" name="Reservation Time">
-        <option value="">8am</option>
-        <option value="">9am</option>
-        <option value="">10am</option>
-        <option value="">11am</option>
+      <form action="" method="post" id="landing-container">
+        <input id="landing-search" type="text" placeholder="Enter a restaurant">
+        <select id="time" name="Reservation Time">
 
-        <option value="">12pm</option>
-        <option value="">1pm</option>
-        <option value="">2pm</option>
-        <option value="">3pm</option>
-
-        <option value="">4pm</option>
-        <option value="">5pm</option>
-        <option value="">6pm</option>
-        <option value="">7pm</option>
-      </select>
-      <div><button id="reserve-btn" type="button" onclick="alert('Hello World!')">Reserve</button></div>
+        </select>
+        <button id="reserve-btn" type="button" onclick="redirect()">Reserve</button>
+        </input>
+      </form>
+    </div>
 
     </div>
+  </section>
+
+  <section id="top-picks">
+    <span>
+      <h1>Top picks</h1>
+    </span>
+    <div id="item-container">
+      <div id="child-item-1" class="child-item"><a href="daldongane"><img class="restaurant-img"
+            src="static/daldongane.jpg" alt=""></a>
+        <div class="rating-box"><span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+        </div>
+        <a href="">
+          <p>Daldongnae KBBQ</p>
+        </a>
+      </div>
+      <div id="child-item-2" class="child-item"><a href="beijing"><img class="restaurant-img" src="static/beijing.jpg"
+            alt=""></a>
+        <div class="rating-box"><span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+        </div>
+        <a href="">
+          <p>Beijing Hotpot</p>
+        </a>
+      </div>
+      <div id="child-item-3" class="child-item"><a href="kinka"><img class="restaurant-img" src="static/kinka.jpg"
+            alt=""></a>
+        <div class="rating-box"><span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star "></span>
+        </div>
+        <a href="">
+          <p>Kinka Izakaya</p>
+        </a>
+      </div>
+
+    </div>
+
   </section>
 
 </body>

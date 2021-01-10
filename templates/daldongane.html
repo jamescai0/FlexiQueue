@@ -1,0 +1,234 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>FlexiQueue</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="{{url_for('static', filename='daldongane.js')}}"></script>
+    <script src="{{url_for('static', filename='read.js')}}"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='daldongane.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+    <header id="navbar">
+        <ul>
+            <li id="home"><a href="index">FlexiQueue</a></li>
+            <li id="search">
+                <input type="text" placeholder="Enter a restaurant"></input>
+            </li>
+            <li id="login"><a href="login">Login</a></li>
+            <li id="signup"><a href="signup">Sign Up</a></li>
+        </ul>
+    </header>
+
+
+    <div id="main">
+        <section id="variables">
+
+            <div class="flex-elem">
+                <p>Number of people</p><select id="pax" name="pax">
+                    <option value="">2</option>
+                    <option value="">4</option>
+                    <option value="">6</option>
+                </select>
+
+            </div>
+            <div class="flex-elem">
+                <p>Time</p><select id="time" name="time">
+                </select>
+
+            </div>
+            <div class="flex-elem">
+                <p>Date</p><select id="date" name="date">
+                </select>
+
+            </div>
+        </section>
+
+
+
+        <section id="content">
+            <div id="seating-container">
+                <div class="small" id="small-1">1</div>
+                <div class="small" id="small-2">2</div>
+                <div class="small" id="small-3">3</div>
+                <div class="small" id="small-4">4</div>
+
+                <div class="med med-col1" id="med-1">5</div>
+                <div class="med med-col1" id="med-2">6</div>
+                <div class="med med-col2" id="med-3">7</div>
+                <div class="med med-col2" id="med-4">8</div>
+
+                <div class="large" id="large-1">9</div>
+                <div class="large" id="large-2">10</div>
+
+            </div>
+
+            <table id="table-container">
+                <tr>
+                    <th>Seat Number</th>
+                    <th>Taken by</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td id="write">null</td>
+                    <td>
+                        <form method='POST' action="/daldongane"><input type="checkbox" class="seat" id="seat-1"
+                                name="seat" value="1">Reserve Table 1
+                            <input id="test" type='submit'>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>null</td>
+                    <td>
+                        <form method='POST' action="/daldongane"><input type="checkbox" class="seat" id="seat-2"
+                                name="seat" value="2">Reserve Table 2
+                            <input type='submit'>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>null</td>
+                    <td>
+                        <form method='POST' action="/daldongane"><input type="checkbox" class="seat" id="seat-3"
+                                name="seat" value="3">Reserve Table 3
+                            <input type='submit'>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>null</td>
+                    <td>
+                        <form method='POST' action="/daldongane"><input type="checkbox" class="seat" id="seat-4"
+                                name="seat" value="4">Reserve Table 4
+                            <input type='submit'>
+                        </form>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>null</td>
+                    <td>
+                        <form method='POST' action="/daldongane"><input type="checkbox" class="seat" id="seat-5"
+                                name="seat" value="5">Reserve Table 5
+                            <input type='submit'>
+                        </form>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>6</td>
+                    <td>null</td>
+                    <td>
+                        <form method='POST' action="/daldongane"><input type="checkbox" class="seat" id="seat-6"
+                                name="seat" value="6">Reserve Table 6
+                            <input type='submit'>
+                        </form>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>7</td>
+                    <td>null</td>
+                    <td>
+                        <form method='POST' action="/daldongane"><input type="checkbox" class="seat" id="seat-7"
+                                name="seat" value="7">Reserve Table 7
+                            <input type='submit'>
+                        </form>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>8</td>
+                    <td>null</td>
+                    <td>
+                        <form method='POST' action="/daldongane"><input type="checkbox" class="seat" id="seat-8"
+                                name="seat" value="8">Reserve Table 8
+                            <input type='submit'>
+                        </form>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>9</td>
+                    <td>null</td>
+                    <td>
+                        <form method='POST' action="/daldongane"><input type="checkbox" class="seat" id="seat-9"
+                                name="seat" value="9">Reserve Table 9
+                            <input type='submit'>
+                        </form>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>10</td>
+                    <td>null</td>
+                    <td>
+                        <form method='POST' action="/daldongane"><input type="checkbox" class="seat" id="seat-10"
+                                name="seat" value="10">Reserve Table 10
+                            <input type='submit'>
+                        </form>
+                    </td>
+                </tr>
+            </table>
+
+            <div id="instructions-box">
+                <p id="instructions">* Click on checkbox to select</p>
+            </div>
+
+        </section>
+
+        <section id="info">
+            <img class="restaurant-img" src="static/daldongane.jpg" alt="">
+            <div class="rating-box"><span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+            </div>
+            <div id="text-box">
+                <h2>Daldongane KBBQ</h2>
+                <p> 12, Younge St, North York, M4K 2S5</p>
+                <p>647-234-1344</p>
+                <div id="time-box">
+                    <div id="left">
+                        <p>Monday</p>
+                        <p>Tuesday</p>
+                        <p>Wednesday</p>
+                        <p>Thursday</p>
+                        <p>Friday</p>
+                        <p>Saturday</p>
+                        <p>Sunday</p>
+                    </div>
+                    <div id="right">
+                        <p>12pm - 12am</p>
+                        <p>12pm - 12am</p>
+                        <p>12pm - 12am</p>
+                        <p>12pm - 12am</p>
+                        <p>12pm - 12am</p>
+                        <p> 12pm - 2am</p>
+                        <p> 12pm - 2am</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+    </div>
+</body>
