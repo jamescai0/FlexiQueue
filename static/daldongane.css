@@ -111,6 +111,7 @@ select{
 #info{
     grid-row: 1/-1;
     grid-column:2/3;
+    overflow-y: hidden;
     text-align: center;
 
 }
@@ -190,6 +191,11 @@ select{
     grid-row:3/5;
 }
 
+#instructions-box{
+    height: 5em;
+    width:100%;
+    margin: 50px 0 0;
+}
 #instructions{
     opacity: 0.8;
     font-size: 12;
@@ -233,6 +239,17 @@ ul{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+}
+
+#time-box{
+    width: 85%;
+
+}
+#left{
+    float:left;
+}
+#right{
+    float:right;
 }
     a{
         opacity: 1;
