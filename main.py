@@ -1,6 +1,6 @@
 from flask import redirect, url_for, request
 from flask import Flask, render_template
-from flask import jsonify
+
 app = Flask(__name__)
 
 
@@ -14,12 +14,6 @@ def returnIndex():
     return render_template('index.html')
 
 
-# @app.route("/daldongane", methods=['GET', 'POST'])
-# def daldongane():
-#     if request.method == 'POST':
-#         return jsonify({request.form.get('seat'): True})
-#     return render_template('daldongane.html')
-
 @app.route("/daldongane", methods=['GET', 'POST'])
 def daldongane():
     if request.method == 'POST':
@@ -30,11 +24,17 @@ def daldongane():
 
 @app.route("/beijing")
 def beijing():
+    if request.method == 'POST':
+        print(request.form.get('mycheckbox'))
+        return 'Reservation made Sucessfully'
     return render_template('beijing.html')
 
 
 @app.route("/kinka")
 def kinka():
+    if request.method == 'POST':
+        print(request.form.get('mycheckbox'))
+        return 'Reservation made Sucessfully'
     return render_template('kinka.html')
 
 # login page
