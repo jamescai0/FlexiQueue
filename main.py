@@ -12,6 +12,7 @@ def index():
 def test_link():
     return render_template('daldongane.html')
 
+#login page
 from flask import redirect, url_for, request
 
 @app.route('/login', methods=['GET', 'POST'])
