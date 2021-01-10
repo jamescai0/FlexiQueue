@@ -5,7 +5,7 @@
 
     <title>FlexiQueue</title>
 
-    <script src="{{url_for('static', filename='index.js')}}"></script>
+    <script src="{{url_for('static', filename='daldongane.js')}}"></script>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -16,14 +16,14 @@
 </head>
 
 <body>
-    <header id="navbar" class="content">
+    <header id="navbar">
         <ul>
-            <li id="home">FlexiQueue</li>
+            <li id="home"><a href="index">FlexiQueue</a></li>
             <li id="search">
                 <input type="text" placeholder="Enter a restaurant"></input>
             </li>
-            <li id="login">Login</li>
-            <li id="signup">Sign Up</li>
+            <li id="login"><a href="login">Login</a></li>
+            <li id="signup"><a href="signup">Sign Up</a></li>
         </ul>
     </header>
 
@@ -79,25 +79,25 @@
                 <tr>
                     <td>1</td>
                     <td>null</td>
-                    <td><a href="">Book</a></td>
+                    <td><a class="available" href="">Book</a></td>
                     </td>
                 </tr>
                 <tr>
                     <td>2</td>
                     <td>null</td>
-                    <td><a href="">Book</a></td>
+                    <td><a class="available" href="">Book</a></td>
                     </td>
                 </tr>
                 <tr>
                     <td>3</td>
                     <td>null</td>
-                    <td><a href="">Book</a></td>
+                    <td><a class="available" href="">Book</a></td>
                     </td>
                 </tr>
                 <tr>
                     <td>4</td>
                     <td>null</td>
-                    <td><a href="">Book</a></td>
+                    <td><a class="available" href="">Book</a></td>
                     </td>
                 </tr>
             </table>
