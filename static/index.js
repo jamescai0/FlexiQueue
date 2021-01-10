@@ -9,7 +9,6 @@ window.onload = function () {
         if (mm < 10) mm = '0' + mm;
         return (dd + sp + mm + sp + yyyy);
     };
-    console.log(curday('/'));
 }
 
 window.onscroll = function () {
