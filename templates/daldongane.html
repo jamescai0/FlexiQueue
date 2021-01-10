@@ -27,64 +27,91 @@
         </ul>
     </header>
 
-    <div>
-        <div>
-            <p>Number of people</p><select id="pax" name="pax">
-                <option value="">2</option>
-                <option value="">4</option>
-                <option value="">6</option>
-            </select>
 
-        </div>
-        <div>
-            <p>Time</p><select id="time" name="time">
-                <option value="">2</option>
-                <option value="">4</option>
-                <option value="">6</option>
-            </select>
+    <div id="main">
+        <section id="variables">
 
-        </div>
-        <div>
-            <p>Date</p><select id="date" name="date">
-                <option value=""></option>
-            </select>
+            <div>
+                <p>Number of people</p><select id="pax" name="pax">
+                    <option value="">2</option>
+                    <option value="">4</option>
+                    <option value="">6</option>
+                </select>
 
-        </div>
+            </div>
+            <div>
+                <p>Time</p><select id="time" name="time">
+                    <option value="">2</option>
+                    <option value="">4</option>
+                    <option value="">6</option>
+                </select>
+
+            </div>
+            <div>
+                <p>Date</p><select id="date" name="date">
+                    <option value=""></option>
+                </select>
+
+            </div>
+        </section>
+
+
+
+        <section id="content">
+            <div id="seating-container">
+                <div class="small" id="small-1"></div>
+                <div class="small" id="small-2"></div>
+                <div class="small" id="small-3"></div>
+                <div class="small" id="small-4"></div>
+
+                <div class="med med-col1" id="med-1"></div>
+                <div class="med med-col1" id="med-2"></div>
+                <div class="med med-col2" id="med-3"></div>
+                <div class="med med-col2" id="med-4"></div>
+
+                <div class="large" id="large-1"></div>
+                <div class="large" id="large-2"></div>
+
+            </div>
+
+            <div>
+                <p id="instructions">* Click on table to select</p>
+                <button id="cfm-btn">Confirm</button>
+            </div>
+
+        </section>
+
+        <section id="info">
+            <img class="restaurant-img" src="static/daldongane.jpg" alt="">
+            <div class="rating-box"><span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+            </div>
+            <div id="text-box">
+                <h2>Daldongane KBBQ</h2>
+                <p> 12, Younge St, North York, M4K 2S5</p>
+                <p>647-234-134</p>
+                <div>
+                    <p>Monday &emsp; 12pm - 12am</p>
+
+                    <p>Tuesday &emsp; 12pm - 12am</p>
+
+                    <p>Wednesday &emsp; 12pm - 12am</p>
+
+                    <p>Thursday &emsp; 12pm - 12am</p>
+
+                    <p>Friday &emsp; 12pm - 12am</p>
+
+                    <p>Saturday &emsp; 12pm - 2am</p>
+
+                    <p>Sunday &emsp; 12pm - 2am</p>
+                </div>
+
+
+            </div>
+
+        </section>
     </div>
-
-    <section id="main">
-        <div id="seating-container">
-            <div class="small" id="small-1"></div>
-            <div class="small" id="small-2"></div>
-            <div class="small" id="small-3"></div>
-            <div class="small" id="small-4"></div>
-
-            <div class="med med-col1" id="med-1"></div>
-            <div class="med med-col1" id="med-2"></div>
-            <div class="med med-col2" id="med-3"></div>
-            <div class="med med-col2" id="med-4"></div>
-
-            <div class="large" id="large-1"></div>
-            <div class="large" id="large-2"></div>
-
-        </div>
-
-        <div>
-            <p id="instructions">* Click on table to select</p>
-            <button id="cfm-btn">Confirm</button>
-        </div>
-
-    </section>
-
-    <section id="info">
-        <div class="img-box"><img class="restaurant-img" src="static/daldongane.jpg" alt=""></div>
-        <div class="rating-box"><span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-        </div>
-        <div class="text-box"></div>
-
-    </section>
 </body>
