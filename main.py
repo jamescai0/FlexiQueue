@@ -14,11 +14,6 @@ def returnIndex():
     return render_template('index.html')
 
 
-@app.route('/signup')
-def signup():
-    return render_template('signup.html')
-
-
 @app.route("/daldongane")
 def daldongane():
     return render_template('daldongane.html')
@@ -45,6 +40,13 @@ def login():
         else:
             return redirect(url_for('home'))
     return render_template('login.html', error=error)
+
+# signup page
+
+
+@app.route('/signup')
+def signup():
+    return render_template('signup.html')
 
 
 if __name__ == "__main__":
