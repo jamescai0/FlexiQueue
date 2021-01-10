@@ -1,0 +1,58 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>FlexiQueue</title>
+
+  <script src="NWHacks-2021/index.js"></script>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css') }}">
+
+
+</head>
+
+<body>
+  <header id="navbar" class="content">
+    <ul>
+      <li id="home">FlexiQueue</li>
+      <li id="search">
+        <input type="text" placeholder="Enter a restaurant"></input>
+      </li>
+      <li id="login">Login</li>
+      <li id="signup">Sign Up</li>
+    </ul>
+  </header>
+
+  <section id="landing">
+    <div>
+      <h1>Need a seat? We got you</h1>
+      <input type="text" placeholder="Enter a restaurant"></input>
+      <select id="time" name="Reservation Time">
+        <option value="">8am</option>
+        <option value="">9am</option>
+        <option value="">10am</option>
+        <option value="">11am</option>
+
+        <option value="">12pm</option>
+        <option value="">1pm</option>
+        <option value="">2pm</option>
+        <option value="">3pm</option>
+
+        <option value="">4pm</option>
+        <option value="">5pm</option>
+        <option value="">6pm</option>
+        <option value="">7pm</option>
+      </select>
+      <div><button id="reserve-btn" type="button" onclick="alert('Hello World!')">Reserve</button></div>
+
+    </div>
+  </section>
+
+</body>
+
+
+
+</html>
