@@ -16,42 +16,29 @@
 </head>
 
 <body>
-  <header id="navbar" class="content">
+  <header id="navbar">
     <ul>
-      <li id="home">FlexiQueue</li>
+      <li id="home"><a href="index">FlexiQueue</a></li>
       <li id="search">
         <input type="text" placeholder="Enter a restaurant"></input>
       </li>
-      <li id="login">Login</li>
-      <li id="signup">Sign Up</li>
+      <li id="login"><a href="login">Login</a></li>
+      <li id="signup"><a href="signup">Sign Up</a></li>
     </ul>
   </header>
 
   <section id="landing">
     <div>
       <h1>Need a seat? We got you</h1>
-      <div id="landing-container">
-        <input type="text" placeholder="Enter a restaurant"></input>
+      <form action="" method="post" id="landing-container">
+        <input id="landing-search" type="text" placeholder="Enter a restaurant">
         <select id="time" name="Reservation Time">
-          <option value="">8am</option>
-          <option value="">9am</option>
-          <option value="">10am</option>
-          <option value="">11am</option>
 
-          <option value="">12pm</option>
-          <option value="">1pm</option>
-          <option value="">2pm</option>
-          <option value="">3pm</option>
-
-          <option value="">4pm</option>
-          <option value="">5pm</option>
-          <option value="">6pm</option>
-          <option value="">7pm</option>
         </select>
-        <button id="reserve-btn" type="button" onclick="alert('Redirecting')">Reserve</button>
-
-
-      </div>
+        <button id="reserve-btn" type="button" onclick="redirect()">Reserve</button>
+        </input>
+      </form>
+    </div>
 
     </div>
   </section>
@@ -73,7 +60,7 @@
           <p>Daldongnae KBBQ</p>
         </a>
       </div>
-      <div id="child-item-2" class="child-item"><a href=""><img class="restaurant-img" src="static/beijing.jpg"
+      <div id="child-item-2" class="child-item"><a href="beijing"><img class="restaurant-img" src="static/beijing.jpg"
             alt=""></a>
         <div class="rating-box"><span class="fa fa-star checked"></span>
           <span class="fa fa-star checked"></span>
@@ -85,7 +72,7 @@
           <p>Beijing Hotpot</p>
         </a>
       </div>
-      <div id="child-item-3" class="child-item"><a href=""><img class="restaurant-img" src="static/kinka.jpg"
+      <div id="child-item-3" class="child-item"><a href="kinka"><img class="restaurant-img" src="static/kinka.jpg"
             alt=""></a>
         <div class="rating-box"><span class="fa fa-star checked"></span>
           <span class="fa fa-star checked"></span>

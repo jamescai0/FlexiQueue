@@ -1,0 +1,45 @@
+<html>
+
+<head>
+  <title>Flask Intro - login page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="static/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='login.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header id="navbar">
+    <ul>
+      <li id="home"><a href="index">FlexiQueue</a></li>
+      <li id="search">
+        <input type="text" placeholder="Enter a restaurant"></input>
+      </li>
+      <li id="login"><a href="login">Login</a></li>
+      <li id="signup"><a href="signup">Sign Up</a></li>
+    </ul>
+  </header>
+
+  <div class="master">
+    <div class="container">
+      <h1>Credentials</h1>
+      <br>
+      <form action="" method="post">
+        <input id="username" type="text" placeholder="Username" name="username" value="{{
+          request.form.username }}">
+        <input id="password" type="password" placeholder="Password" name="password" value="{{
+          request.form.password }}">
+        <input id="login-btn" class="btn btn-default" type="submit" value="Login">
+      </form>
+
+
+      {% if error %}
+      <p id="error"><strong>Error:</strong> {{ error }}</p>
+      {% endif %}
+    </div>
+  </div>
+</body>
+
+</html>
