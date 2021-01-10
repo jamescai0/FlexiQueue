@@ -14,10 +14,17 @@ def returnIndex():
     return render_template('index.html')
 
 
+# @app.route("/daldongane", methods=['GET', 'POST'])
+# def daldongane():
+#     if request.method == 'POST':
+#         return jsonify({request.form.get('seat'): True})
+#     return render_template('daldongane.html')
+
 @app.route("/daldongane", methods=['GET', 'POST'])
 def daldongane():
     if request.method == 'POST':
-        return jsonify({request.form.get('seat'): True})
+        print(request.form.get('mycheckbox'))
+        return 'Reservation made Sucessfully'
     return render_template('daldongane.html')
 
 
