@@ -1,0 +1,55 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>FlexiQueue</title>
+
+    <script src="{{url_for('static', filename='index.js')}}"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+    <header id="navbar" class="content">
+        <ul>
+            <li id="home">FlexiQueue</li>
+            <li id="search">
+                <input type="text" placeholder="Enter a restaurant"></input>
+            </li>
+            <li id="login">Login</li>
+            <li id="signup">Sign Up</li>
+        </ul>
+    </header>
+
+    <div>
+        <div>
+            <p>Number of people</p><select id="pax" name="pax">
+                <option value="">2</option>
+                <option value="">4</option>
+                <option value="">6</option>
+            </select>
+
+        </div>
+        <div>
+            <p>Time</p><select id="time" name="time">
+                <option value="">2</option>
+                <option value="">4</option>
+                <option value="">6</option>
+            </select>
+
+        </div>
+        <div>
+            <p>Date</p><select id="date" name="date">
+                <option value=""></option>
+            </select>
+
+        </div>
+    </div>
+
+</body>
