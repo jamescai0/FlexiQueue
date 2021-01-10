@@ -14,8 +14,11 @@ def returnIndex():
     return render_template('index.html')
 
 
-@app.route("/daldongane")
+@app.route("/daldongane", methods=['GET', 'POST'])
 def daldongane():
+    if request.method == 'POST':
+        print(request.form.get('seat'))
+        return 'Reservation made Sucessfully :)'
     return render_template('daldongane.html')
 
 
